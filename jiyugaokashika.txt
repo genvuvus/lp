@@ -23,3 +23,174 @@ if ($response !== false) {
     }
 }
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=0">
+<meta name="description" content="歯周病治療についてご説明します。<? include("inc/description.inc"); ?>">
+<meta name="keywords" content="<? include("inc/keywords.inc"); ?>">
+
+<title>歯周病｜<? include("inc/title.inc"); ?></title>
+
+<link href="css/import.css" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="favicon/manifest.json">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+<? include("inc/t_code.inc"); ?>
+
+<script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?zRicjqTQ7cc%3D&aa=1&ab=2" charset="utf-8"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/common.js" type="text/javascript"></script>
+<script src="js/wow.min.js" type="text/javascript"></script>
+
+</head>
+
+<body id="perio">
+
+<div id="spNavArea">
+  <div class="inner">
+    <div class="navBtn"><span></span><span></span><span></span></div>
+    <div id="spNavBody">
+      <nav>
+      <ul>
+        <li><a href="./">ホーム</a></li>
+        <li><a href="staff.html">医院紹介</a></li>
+        <li><a href="service.html">治療内容</a></li>
+        <li><a href="perio.html">歯周病</a></li>
+        <li><a href="child.html">小児歯科</a></li>
+        <li><a href="implant.html">インプラント</a></li>
+        <li><a href="esthetic.html">審美治療</a></li>
+        <li><a href="prevention.html">感染予防</a></li>
+        <li><a href="/column">コラム</a></li>
+        <li><a href="price.html">料金表</a></li>
+      </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <div id="container">
+
+    <!--ヘッダーここから-->
+    <div class="clearfix" id="header_wrap">
+      <h1>歯周病｜<? include("inc/h1.inc"); ?></h1>
+      <? include("inc/header.inc"); ?>
+    </div><!--ヘッダーここまで-->
+
+    <!--ナビゲーションここから-->
+    <? include("inc/navi-fixed.inc"); ?>
+    <!--ナビゲーションここまで-->
+
+    <!--メインビジュアルここから-->
+    <div class="clearfix" id="under_visual">
+      <div class="trim h-min"><img src="img/perio/img_under.png" alt="歯周病"></div>
+      <div class="comment">歯周病</div>
+      <div class="icon"><img src="img/service/img_header_icon.png" alt="歯周病"></div>
+    </div>
+    <!--メインビジュアルここまで-->
+
+  <div class="breadcrumb clearfix">
+    <ul>
+      <li><a href="./">ホーム</a></li>
+      <li>&nbsp;&nbsp;&#8250;&nbsp;&nbsp;歯周病</li>
+    </ul>
+  </div>
+
+    <!--コンテンツここから-->
+    <div id="contents">
+
+      <article class="clearfix wow fadeIn" >
+        <div class="wrap">
+          <h2>患者さん一人一人に合った治療法を第一に考え、<br class="sp_none">皆さまに安心と信頼を提供します。</h2>
+          <p>
+          </p>
+        </div>
+      </article>
+
+
+      <section class="clearfix" id="s01">
+        <div class="wrap col2_3 content under">
+          <h2 class="wow fadeIn">歯周病が薬で治る？</h2>
+          <div class="intro clearfix">
+            <div class="clearfix wow fadeInUp">
+              <p>
+歯周病といえば、歯磨き指導と歯石除去をしたりする歯の周りを掃除する治療などが、昔からどの医院でもされている基本的な治療でした。しかしこの治療をしてもなかなか改善せず歯肉の腫れや出血、口臭が直らずさらに歯周病で歯を失う方がいらっしゃることも事実です。<br>
+<br>
+ところが、簡単に歯周病をくすりでなおす方法が見つかったのです。原因である菌を特定してくすりでその菌を退治することができるようになりました。21世紀になってから始まった最新の治療法「顕微鏡を使った歯周内科治療」です。<br>
+<br>
+<span class="red">※この治療は健康保険の適用ができる場合があります。 詳しくは当院でご相談下さい。</span>
+              </p>
+
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class="clearfix" id="s02">
+        <div class="wrap col2_3 content under">
+          <h2 class="wow fadeIn">どうやって治すの？</h2>
+
+					<h3>歯周病をくすりで治す４つのプロセス</h3>
+
+					<div class="boxcolmn clearfix">
+					<h4>1. 位相差顕微鏡での菌の確認</h4>
+					<img src="img/perio/img01.jpg" />
+					<p><div class="news">只今メンテナンスの為、位相差顕微鏡を使用しての菌の確認は行っておりません。</div>高性能の位相差顕微鏡で口の中の菌の状態を調べます。きれいなのか、歯周病菌はいるのか、カビが多いのか、菌の状態を調べることで最も適切で、効果的な薬を選ぶことができます。</p>
+					</div>
+
+					<div class="boxcolmn clearfix">
+					<h4>2. 細菌除去薬剤の内服</h4>
+					<img src="img/perio/img02.jpg" />
+					<p>症例-40代男性<br>
+					<br>
+					<b>顕微鏡写真1</b>は、治療開始前。<br>
+					トレポネーマ、カンジダが多く見られます。自覚症状は出血、ウミ、歯の揺れ、口臭、唾液のネバネバ。<br>
+					<br>
+					<b>顕微鏡写真2</b>は、くすりを一週間飲んだ後。<br>
+					自覚症状はほとんどなくなりました。</p>
+					</div>
+
+					<div class="boxcolmn clearfix">
+					<h4>3. カビの除去薬剤あるいはカビとり歯磨き剤での歯磨き</h4>
+					<p>さまざまな種類のカビの除去薬剤、あるいはカビとり歯磨き剤での歯磨きで、様々な歯周病菌やカビを減少させます。</p>
+					</div>
+
+					<div class="boxcolmn clearfix">
+					<h4>4. 除菌後の歯石とり</h4>
+					<img src="img/perio/img03.jpg" />
+					<p>治療後は歯周病は感染症なので再感染、とくに性感染には気をつけましょう。.菌が感染しないように歯磨きでお口を清潔に保ち、ときどき再感染していないか定期検診を受けましょう。</p>					</div>
+      </section>
+
+      <section class="clearfix" id="s03">
+        <div class="wrap col2_3 content under">
+          <h2 class="wow fadeIn">患者さん1000人アンケート</h2>
+					<div class="imgbox">
+          <img alt="<? include("inc/area.inc"); ?>・<? include("inc/clinic_name.inc"); ?>" src="img/perio/graph.gif">
+					</div>
+					<p>自覚症状の強い方ほど、1週間後の変化を大きく感じます。<br>
+<br>
+<span class="red">※国際歯周内科学研究会に許可を得て転記させていただきました。</span></p>
+        </div>
+      </section>
+
+    </div>
+    <!--コンテンツここまで-->
+
+    <!--フッターここから-->
+    <section class="clearfix" id="footer_wrap">
+      <? include("inc/footer.inc"); ?>
+    </section>
+    <!--フッターここまで-->
+
+  </div>
+
+<script src="js/spnav.js"></script>
+</body>
+</html>
